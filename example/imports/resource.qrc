@@ -194,8 +194,8 @@
         <file>example/res/svg/avatar_12.svg</file>
         <file>example/res/svg/home.svg</file>
         <file>example/res/svg/home_dark.svg</file>
-        <file>example/i18n/example_en_US.qm</file>
-        <file>example/i18n/example_zh_CN.qm</file>
+        <!-- <file>example/i18n/example_en_US.qm</file> -->
+        <!-- <file>example/i18n/example_zh_CN.qm</file> -->
         <file>example/qml/global/GlobalModel.qml</file>
         <file>example/qml/page/T_GroupBox.qml</file>
         <file>example/qml/page/T_Sheet.qml</file>

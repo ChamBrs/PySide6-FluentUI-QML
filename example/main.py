@@ -59,11 +59,15 @@ def main():
     context = engine.rootContext()
     TranslateHelper().init(engine)
     context.setContextProperty("AppInfo", AppInfo())
-
     context.setContextProperty("InitializrHelper", InitializrHelper())
     context.setContextProperty("SettingsHelper", SettingsHelper())
     context.setContextProperty("TranslateHelper", TranslateHelper())
     FluentUI.registerTypes(engine)
+
+    # Instantiate and expose chart generator backend objects
+    from example.helper.ChartGeneratorHelper import ChartGeneratorHelper
+    context.setContextProperty("ChartGeneratorHelper", ChartGeneratorHelper())
+
     qml_file = QUrl("qrc:/example/qml/App.qml")
     engine.load(qml_file)
     if not engine.rootObjects():

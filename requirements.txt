@@ -1,0 +1,7 @@
+PySide6
+pandas
+qasync
+keyboard
+qrcode
+PyOpenGL
+py7zr
